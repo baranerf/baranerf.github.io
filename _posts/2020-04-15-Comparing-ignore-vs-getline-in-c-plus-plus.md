@@ -16,7 +16,7 @@ Here I want to compare the difference between .ignore() and .getline() and see w
 
 Using ignore, the number of characters provided as the first argument will be ignored OR until the delimiter is reached ('\\n'). Here, we provided LONG_MAX as a very long number of characters.
 
-In a modern compiler, having LONG_MAX characters in a single line is equal to more than 1 Million TerraBytes (TB)!
+In a modern compiler, having LONG_MAX characters in a single line is equal to more than 1 Million TeraBytes (TB)!
 
 
 <img src="/images/media_ignore/image1.png" style="width:11.33333in;height:1.9375in" alt="Machine generated alternative text: main.cpp @ saving... *include &lt;iostream&gt; clang version 7 . O. .18 clang++—7 —pthread —std=c++17 . &#39;main Long limit: 9223372036854775807 .04.1 (tags/RE1_EASE 700/ - na —o mal n mal n. cpp *include int main() { std: : cout &quot;Long std: : cout &quot;Long bits)): \n&quot;&lt;&lt;(LONG limit: limit in Terabytes (2A4e characters TBS&quot;; (8 Long limit in Terabytes (2A40 characters (8 bits) ) : 1048575 " />
@@ -73,9 +73,7 @@ Using ignore, the computer used less than 1 MB of memory (920 KB) and finished i
 
 <img src="/images/media_ignore/image6.png" style="width:8.67708in;height:6.03125in" alt="Machine generated alternative text: Report20200407-2329.diagsession O Stop Collection Output Diagnostics session: 12 seconds Memory (KB) 920 @ Take snapshot Force GC Take snapshot Test.cpp x Zoom In A Zoom Out Reset View IOS 40s C:\Users\erfan\OneDrive\@2020\University\CS 110\Test\Release\Test.exe Openning file for reading... C: \ IgnoreTest\get1ine.txt file oppened succesfully for reading... Before ignoring the first line using ignore(LONG_MAX, &#39;) (N37GB) " />
 
- 
 
- 
 
 ## getline()
 
@@ -85,15 +83,9 @@ getline method consumed computer memory quite quickly! In four seconds, it reach
 
 <img src="/images/media_ignore/image8.png" style="width:18.3125in;height:3.84375in" alt="Machine generated alternative text: Test.cpp Report20200407-2328.diagsessiori x Output Reset Zoom Clear Selection Zoom In Diagnostics session: 8.817 seconds 500ms Memory (GB) Is 1.5s 2.5s 35 3.5s 45 4.5s 5.5s 6s A No snapshots were taken in the profiling session. In order to view application memory details, please start a new profiling session and take at least one snapshot using the &quot;Take snapshot&quot; button " />
 
- 
-
- 
-
 # Conclusion
 
 Although it may seem that .ignore() does not read very long files and has more restriction than .getline(), however, a real-world testing revealed that in practice .getline() cannot even ignore read a 37GB line in a computer with 16GB of memory and .ignore() is a more appropriate method for skipping very long lines up to 1 million Terabytes (in theory at least).
-
- 
 
 It makes sense from memory point of view as well. If we do not need a few lines of inputs, we should IGNORE them rather than STORING them in the memory using getline().
 
