@@ -7,5 +7,5 @@ permalink: /about/
 I am a computer science student at the University of Regina. 
 
 ### Contact me
+erfani.baran --- at --- outlook.com
 
-[email@domain.com](mailto:erfani.baran@outlook.com)
