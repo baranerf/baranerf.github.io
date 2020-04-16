@@ -7,20 +7,16 @@ Here I want to compare the difference between .ignore() and .getline() and see w
 
 <!-- more -->
 
-~~~cpp
-inFile.open(FILE_NAME);
-~~~
+`inFile.open(FILE_NAME);`
+
 
 ## .ignore(..)
 
-'''cpp
-inFile.ignore(LLONG_MAX, '\\n');//Ignore first line
-'''
- 
+`inFile.ignore(LONG_MAX, '\\n');//Ignore first line``
 
-Using ignore, the number of characters provided as the first argument will be ignored OR until the delimiter is reached ('\\n'). Here, we provided LONG\_MAX as a very long number of characters.
+Using ignore, the number of characters provided as the first argument will be ignored OR until the delimiter is reached ('\\n'). Here, we provided LONG_MAX as a very long number of characters.
 
-In a modern compiler, having LONG\_MAX characters in a single line is equal to more than 1 Million TerraBytes (TB)!
+In a modern compiler, having LONG_MAX characters in a single line is equal to more than 1 Million TerraBytes (TB)!
 
 
 <img src="/images/media_ignore/image1.png" style="width:11.33333in;height:1.9375in" alt="Machine generated alternative text: main.cpp @ saving... *include &lt;iostream&gt; clang version 7 . O. .18 clang++—7 —pthread —std=c++17 . &#39;main Long limit: 9223372036854775807 .04.1 (tags/RE1_EASE 700/ - na —o mal n mal n. cpp *include int main() { std: : cout &quot;Long std: : cout &quot;Long bits)): \n&quot;&lt;&lt;(LONG limit: limit in Terabytes (2A4e characters TBS&quot;; (8 Long limit in Terabytes (2A40 characters (8 bits) ) : 1048575 " />
@@ -43,7 +39,7 @@ It seems like getline() does not restrict the number of characters. Comparing wi
 
  
 
-Let's see what happens in reality. If these assumptions are correct, for getline() to read LONG\_MAX characters and store it in &lt;junk&gt; variable, we need more than 1 Million TBs of main memory!
+Let's see what happens in reality. If these assumptions are correct, for getline() to read LONG_MAX characters and store it in &lt;junk&gt; variable, we need more than 1 Million TBs of main memory!
 
  
 
