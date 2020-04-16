@@ -12,7 +12,7 @@ Here I want to compare the difference between .ignore() and .getline() and see w
 
 ## .ignore(..)
 
-`inFile.ignore(LONG_MAX, '\\n');//Ignore first line``
+`inFile.ignore(LONG_MAX, '\\n');//Ignore first line`
 
 Using ignore, the number of characters provided as the first argument will be ignored OR until the delimiter is reached ('\\n'). Here, we provided LONG_MAX as a very long number of characters.
 
@@ -26,10 +26,8 @@ In a modern compiler, having LONG_MAX characters in a single line is equal to mo
  
 
 ## getline(..)
-```
-string junk;
-getline(inFile, junk);
-```
+`string junk;`
+`getline(inFile, junk);`
 
 Here, using getline, a junk string is created and used to STORE one line of input. String is in memory, so if there are n characters in the first line, we need at least n+1 bytes in memory.
 
