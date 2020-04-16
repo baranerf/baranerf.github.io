@@ -3,13 +3,14 @@
 #
 
 # Name of your site (displayed in the header)
-name: Your Name
+name: Baran (Ghazal) Erfani
 
 # Short bio or description (displayed in the header)
-description: Web Developer from Somewhere
+description: Computer Science Student @ University of Regina 
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+#avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+avatar: https://media-exp1.licdn.com/dms/image/C5603AQEt9aQF31bC3Q/profile-displayphoto-shrink_800_800/0?e=1592438400&v=beta&t=6vF50bmz2CwTEfmf617jwSG_BJme6dFPg3-Up8OG4vs
 
 #
 # Flags below are optional
