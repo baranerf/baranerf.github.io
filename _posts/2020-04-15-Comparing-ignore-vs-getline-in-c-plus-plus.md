@@ -5,15 +5,17 @@ title: Difference between .ignore(…) and getline(…) for skipping lines in C+
 
 Here I want to compare the difference between .ignore() and .getline() and see which one provides more restrictions. If we want to skip a few lines before reading the actual data, there are two main methods that could be used: `.ignore(...)` and `getline(...)`
 
-```cpp
-inFile.open(FILE\_NAME);
-```
+<!-- more -->
+
+~~~cpp
+inFile.open(FILE_NAME);
+~~~
 
 ## .ignore(..)
 
-```cpp
-inFile.ignore(LLONG\_MAX, '\\n');//Ignore first line
-```
+'''cpp
+inFile.ignore(LLONG_MAX, '\\n');//Ignore first line
+'''
  
 
 Using ignore, the number of characters provided as the first argument will be ignored OR until the delimiter is reached ('\\n'). Here, we provided LONG\_MAX as a very long number of characters.
