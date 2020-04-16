@@ -19,9 +19,9 @@ Using ignore, the number of characters provided as the first argument will be ig
 
 In a modern compiler, having LONG\_MAX characters in a single line is equal to more than 1 Million TerraBytes (TB)!
 
-![_config.yml]({{ site.baseurl }}/_post/media_ignore/image1.png)
 
-<img src="_post/media/image1.png" style="width:11.33333in;height:1.9375in" alt="Machine generated alternative text: main.cpp @ saving... *include &lt;iostream&gt; clang version 7 . O. .18 clang++—7 —pthread —std=c++17 . &#39;main Long limit: 9223372036854775807 .04.1 (tags/RE1_EASE 700/ - na —o mal n mal n. cpp *include int main() { std: : cout &quot;Long std: : cout &quot;Long bits)): \n&quot;&lt;&lt;(LONG limit: limit in Terabytes (2A4e characters TBS&quot;; (8 Long limit in Terabytes (2A40 characters (8 bits) ) : 1048575 " />
+
+<img src="media/image1.png" style="width:11.33333in;height:1.9375in" alt="Machine generated alternative text: main.cpp @ saving... *include &lt;iostream&gt; clang version 7 . O. .18 clang++—7 —pthread —std=c++17 . &#39;main Long limit: 9223372036854775807 .04.1 (tags/RE1_EASE 700/ - na —o mal n mal n. cpp *include int main() { std: : cout &quot;Long std: : cout &quot;Long bits)): \n&quot;&lt;&lt;(LONG limit: limit in Terabytes (2A4e characters TBS&quot;; (8 Long limit in Terabytes (2A40 characters (8 bits) ) : 1048575 " />
 
  
 
